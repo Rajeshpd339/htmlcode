@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+            display: flex;
+            width: 100%;
+            height: 10vh;
+            justify-content: space-evenly;
+            background-color: blue;
+            color: white;
+            align-items: center;
+        }
+        .nav div{
+            width: 100px;
+            text-align: center;
+        }
+        .menu{
+            position: relative;
+        }
+        .submenu{
+            position: absolute;
+            width: 100%;
+            background-color: aqua;
+            color: brown;
+            display: none;
+        }
+        .submenu div{
+            text-align: left;
+            padding: 4px;
+            line-height: 18px;
+            box-sizing: border-box;
+            width: 100%;
+
+
+        }
+        .body{
+            width: 100%;
+            background-color: chocolate;
+            height: 90vh;
+
+        }
+
+        .submenu>div:hover{
+            background-color: blueviolet;
+        }
+        .menu:hover .submenu{
+            display: block;
+        }
+        .file{
+            position: relative;
+            width: 100%;
+        }
+
+        .nsubmenu{
+            display: none;
+            position: absolute;
+            width: 100%;
+            background-color: khaki;
+            top: 15px;
+            right: 100%;
+        }
+        .nsubmenu div:hover{
+            background-color: green;
+        }
+        .file:hover.nsubmenu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="menu">Home 
+            <div class="submenu">
+                <div class="file">file
+                    <div class="nsubmenu">
+                        <div>new</div>
+                        <div>save</div>
+                        <div>save as</div>
+                        <div>open</div>
+                        <div>close</div>
+                    </div>
+                </div>
+                <div>new</div>
+                <div>open</div>
+                <div>close</div>
+            </div>
+        </div>
+        <div >about </div>
+        <div >login </div>
+        <div >logout </div>
+        <div >content </div>
+    </nav>
+    <div class="body"></div>
+</body>
+</html>

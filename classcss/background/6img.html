@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            width: 100px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid red;
+            padding: 5px;
+            position: relative;
+        }
+        .con img{
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+            border-radius: 50%;
+            transition: all 3s;
+        }
+        .con img:hover{
+            opacity: 1;
+        }
+        .text{
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            transition: all 5s;
+            font-weight: bold;
+            color: red;
+            text-transform: uppercase;
+        }
+        .con:hover .text{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <img src="rajesh.jpeg" alt="name">
+        <div class="text">dksra</div>
+    </div>
+</body>
+</html>

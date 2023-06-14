@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1{
+            background-color: blue;
+        }
+        .c1{
+            background-color: red;
+        }
+        h1,#p1,.c2,#d2{
+            background-color: yellow;
+        }
+        .con p{
+background-color: green;
+        }
+        div>p{
+            background-color: darkcyan;
+        }
+        input[type="text"]
+        {
+            background-color: lawngreen;
+            border: 3px solid red;
+        }
+        *{
+            background-color: yellowgreen;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="d1">id selector</div>
+    <div class="c1">class selector</div>
+    <div>tag selector</div>
+    <p id="p1">group selctor</p>
+    <h1>group selctor </h1>
+    <div class="c2">gs</div>
+    <div id="d2">gs</div>
+    <div class="con">
+        <p>child selector</p>
+        <section>
+            <p>p tag inside section </p>
+        </section>
+        <h2>h2 tag</h2>
+    </div>
+  <p>p tag out side </p>
+<div >
+    <p>p tag</p>
+    <section>
+<p>p tag inside div</p>
+    </section>
+    <p>p tag out side section</p>
+    <h3>h3 tag</h3>
+</div>
+<p>p tag outside </p>
+<input type="text"/><br/>
+<input type="password"/><br/>
+<input type="number"/><br/>
+<input type="text"/><br/>
+<p>universal tag</p>
+</body>
+</html>
